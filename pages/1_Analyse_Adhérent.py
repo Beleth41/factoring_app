@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import matplotlib.ticker as mticker
-from utils import normalize_columns
 
 st.title("Analyse par Adhérent")
 
@@ -655,4 +654,5 @@ if 'Client Number' in df.columns and 'Legal Client Name' in df.columns:
 
 else:
     st.error("Le fichier doit contenir les colonnes 'Client Number' et 'Legal Client Name'.")
+
 
